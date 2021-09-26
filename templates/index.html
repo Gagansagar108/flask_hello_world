@@ -3,6 +3,9 @@
 {% endblock %}
 
 {% block body %}
-<h1>Hello Danish</h1>
-<h1> bahut marunga </h1>
+<form action="/result" method="POST" enctype="multipart/form-data">
+  <label for="img">Select image:</label>
+  <input type="file" id="img" name="img" >
+    <button type="submit"> submit </button>
+</form>
 {% endblock %}
